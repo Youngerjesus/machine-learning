@@ -28,7 +28,7 @@
   - X is ad information, you information Y is if you click on that ad or not
   - X is 집 사이즈 Y is 집 값 
     - 이런 예에 적용하는 알고리즘은 Regression 이라고한다. 
-    - 무한히 가능한 범위 내에서 정확한 숫자를 정하는 것
+    - 무한히 가능한 범위 내에서 정확한 숫자를 정하는 것. 직선을 그릴 수도 있고, 곡선을 그릴 수도 있다. 
     - 이게 대표적인 Supervised learning 이다. 다른 것은 Classification 
 
 ### Classification
@@ -41,7 +41,7 @@
 
 ## Unsupervised learning 
 
-- output y 가 정답으로 라벨링되어있지 않다. 그래서 위의 classification 문제로 보면 어떤게 종양인지, 암인지 구별이 안되어있다.
+- output y 가 정답으로 라벨링 되어있지 않다. 그래서 위의 classification 문제로 보면 어떤게 종양인지, 암인지 구별이 안되어있다.
   - 그래서 이런 질문 자체가 들어올 수 없다. 이를 예측할 수 없기 떄문에. 
   - 대신 데이터 셋을 보고 structure 나 Pattern 을 찾도록 한다. 그래서 데이터를 다른 group 이나 cluster 로 구별하는 일을 할 수 있다. 
     - 이걸 clustering algorithm 이라고 한다. 
