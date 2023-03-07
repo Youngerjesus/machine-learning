@@ -4,8 +4,9 @@
 
 - feature scaling 을 통해서 gradient descent 가 더 빨라지게 할 수 있다.  
 - feature 의 range 범위가 차이가 많이나면 gradient descent 가 느리다. 그래서 comparable 한 수준으로 transformation 하는 Rescaling 을 하면 도움이 된다.
-  - feature 의 범위가 큰 게 있고 작은게 있다면 일반적으로 범위가 큰 쪽의 파라미터는 작을 거고, 범위가 작은 쪽의 파라미터는 클 것. 이 경우에서 gradient descent 를 실행하면 불필요하게 하강되는 범위가 크거나 작을 수 있다. 
-  - 그래서 rescale 해서 feature 의 범위를 0~1 사이로 맞춰두는 것. 그러면 더 빠를 것.
+  - feature 의 값의 범위가 큰 게 있고 작은게 있다면 범위가 큰 쪽의 파라미터가 gradient descent 에 더 큰 영향력을 가지게 된다. 실제로 중요한 feature 의 영향력이 적어질 수 있다.  
+  - 이 경우에서 gradient descent 를 실행하면 수렴하는게 어려워지거나 느려진다.  
+  - 그래서 rescale 해서 feature 의 범위를 0~1 사이로 맞춰두는 것. 모든 feature 의 영향력을 맞추는 것이다.
 
 ![](../images/feature%20rescale.png)
 
