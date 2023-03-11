@@ -19,7 +19,8 @@
 
 ![](../images/logistic%20regression.png)
 
-- signoid function 에서 z 값이 커지면 1 에 가까워지고 z 값이 엄청 작다면 0 에 가까워진다. 
+- sigmoid function 에서 z 값이 커지면 1 에 가까워지고 z 값이 엄청 작다면 0 에 가까워진다. 
+- sigmoid function 의 y 값은 확률을 나타낸다고 보면된다.  
 
 - 다음은 logistic regression 알고리즘을 적용하는 방법
 
