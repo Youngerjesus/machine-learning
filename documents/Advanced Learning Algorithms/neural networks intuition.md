@@ -78,3 +78,24 @@
 ![](../images/multilayer%20perceptron.png)
 
 - 이런 걸 Multilayer perceptron 이라고 한다. 
+
+- Neural Network 를 정의해보자면 더 나은 feature 를 만들어 나가면서 예측을 하는 것이다. 아걸 neuron 과 layer 를 통해서 이 
+  - 뉴런은 더 나은 feature 를 만드는 과정이다. (feature engineering)
+  - layer 에서 계산을 해서 나온 activation value 는 logistic regression 을 통해서 만들어진다. 
+  - layer 는 뉴런을 그룹화 한 것으로 같은 input 을 기반으로 만들어지는 것. 
+
+## Example: Recognizing Images
+
+![](../images/face%20recognization.png)
+
+- 이미지 인식으로 보는 각 layer 별로 뉴런이 어떤 계산을 하고 있는지 보는 것.
+- 이미지 정보 자체는 픽셀 정보로 표시된다. 1000 X 1000 행렬로 1백만개의 밝기 정보가 input vector 로 들어옴.
+- 각 hidden layer 가 어떤 것들을 계산하고 있는지 보면 다음과 같다. 
+  - 첫 번째 hidden layer 수직선이나 수직 가장자리 같은 것들을 찾는 뉴런과 특정 방향이나 선을 찾는 뉴런 등이 있는 즉 이미지에서 매우 짧은 선을 찾는 역할을 한다면 
+  - 두 번째 hidden layer 는 얼굴의 일부인 코와 눈 같은 것들을 찾는다. 각 선들을 집합으로 모아서. 
+  - 세 번째 hidden layer 는 얼굴의 종합적인 면을 보면서 판단하는 역할을 하는 뉴런이 있다. 
+  - neural network 는 이러한 것들을 스스로 탐지한다는 것. 점점 high level feature 로 변경해가면서. 
+  - 점점 더 큰 윈도우로 발전해나가면서 탐지한다.
+  - (뉴런이 뭘 계산하려고 하는지 시각화 해보면 어떤 걸 하는지 알 수 있네.) 
+
+- activation 은 점점 high level feature 로 되간다. 
