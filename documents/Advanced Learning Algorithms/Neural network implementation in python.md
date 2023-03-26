@@ -9,6 +9,7 @@
 - 각 뉴런에 대해서 값을 계산해서 a1_1, a1_2, a1_3 을 계산해서 a vector 를 만들어서 이를 다음 계층에 전달.
   - a1 = [a1, a2, a3] 가 되는 거임.
 - a1_1 이나 a1_2 가 어떤 표현 용어인지 알아야 하고, w1_1, b1_1 을 이용해서 z1_1 을 계산하고 이를 이용해서 a1_1 을 게산한다. 그리고 a1_1 과 a1_2, a1_3 이 모여서 a vector 가 되고.
+- vector 들의 곱을 쓰는게 dot 연산이었음.
 
 ## General implementation of forward propagation
 
